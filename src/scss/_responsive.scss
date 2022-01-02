@@ -1,0 +1,44 @@
+// tablet -pc low
+@media (min-width: 740px) and (max-width: 1023px) {
+  :root {
+    --navmenu-width: 70px;
+  }
+
+  //navmenu
+  .navmenu__tab {
+    justify-content: center;
+    height: 50px !important;
+  }
+
+  .navmenu__tab-ico {
+    margin-left: 0px !important;
+  }
+  .navmenu__tab-text {
+    display: none;
+  }
+  .navmenu__tab-select {
+    display: none;
+  }
+  //container
+}
+
+// smart phone
+@media (max-width: 739px) {
+  :root {
+    --navmenu-width: 70px;
+  }
+  .navmenu__tab {
+    justify-content: center;
+    height: 50px !important;
+  }
+
+  .navmenu__tab-ico {
+    margin-left: 0px !important;
+  }
+  .navmenu__tab-text {
+    display: none;
+  }
+  .navmenu__tab-select {
+    display: none;
+  }
+}

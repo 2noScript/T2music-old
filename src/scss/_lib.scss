@@ -1,0 +1,68 @@
+// TOOLTIP
+:root {
+  --lib-tooltip-bg: red;
+}
+
+.lib-tooltip {
+  position: absolute;
+  z-index: 100;
+  border-radius: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
+  line-height: 20px;
+  font-size: 16px;
+  max-width: 300px;
+  height: 30px;
+  outline: none;
+  visibility: visible;
+  background-color: var(--lib-tooltip-bg);
+  transition: all 0.3s ease;
+}
+.lib-b-tooltip:hover .lib-tooltip {
+  visibility: visible;
+}
+.lib-b-tooltip {
+  position: relative;
+  z-index: 1000;
+  background-color: brown;
+  height: 40px;
+  margin-top: 100px;
+  width: 200px;
+}
+.lib-tooltip-t {
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.lib-tooltip-t::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border-width: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: var(--lib-tooltip-bg) transparent transparent transparent;
+}
+.lib-tooltip-b {
+  top: calc(100% + 10px);
+}
+.lib-tooltip-b::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
+  border-width: 8px;
+  background-color: transparent;
+  border-style: solid;
+  border-color: transparent transparent var(--lib-tooltip-bg) transparent;
+}
+.lib-tooltip-r {
+  left: calc(100% + 10px);
+}
+.lib-tooltip-l {
+  right: calc(100% + 10px);
+}

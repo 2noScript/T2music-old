@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: wheat;
+  height: calc(100vh - 90px);
+  width: calc(100vw - var(--navmenu-width));
+}
+.container .header {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  z-index: 10;
+  width: 100%;
+  height: 70px;
+}
+
+.header__navigate {
+  margin-left: 40px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 30px;
+}
+.header__navigate-back,
+.header__navigate-next {
+  margin-left: 4px;
+  margin-right: 4px;
+  cursor: pointer;
+}
+
+.header__search {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+  // justify-content: center;
+  transition: width 0.2s ease;
+}
+
+.header__search.header__search--display {
+  justify-content: flex-start;
+  width: 500px;
+  background-color: turquoise;
+}
+.header__search-btn {
+  background-color: transparent;
+  padding-top: 3px;
+  padding-left: 11px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.header__search-text {
+  display: none;
+}
+.header__search-clear {
+  display: none;
+}
+
+.header__search--display .header__search-clear {
+  padding-right: 12px;
+  display: block;
+  cursor: pointer;
+}
+.header__search--display .header__search-btn {
+  padding-left: 12px;
+  padding-top: 3px;
+}
+
+.header__search--display .header__search-text {
+  padding-right: 8px;
+  background-color: transparent;
+  padding: 8px;
+  outline: none;
+  width: 470px;
+  display: block;
+}
+
+.header__setting {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  right: 40px;
+  display: flex;
+  align-items: center;
+}
+.header__setting-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 30px;
+  background-color: rgb(92, 83, 83);
+  font-size: 16px;
+  color: wheat;
+  cursor: pointer;
+  margin-left: 8px;
+}
+.header__setting-img {
+  object-fit: scale-down;
+  height: 40px;
+  border-radius: 30px;
+}
+.container .content {
+  overflow-y: scroll;
+  background-color: blue;
+  width: 100%;
+  height: calc(100% - 70px);
+}
