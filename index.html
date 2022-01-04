@@ -143,8 +143,48 @@
             </div>
 
         </div>
-        <div class="controlmusic">
-
+        <div class="footer">
+            <div class="footer__currentsong">
+                <img src="./wwwroot/img/girl.jpg" alt="" class="footer__currentsong-img">
+                <div class="footer__currentsong-info">
+                    <div class="footer__currentsong-name">beautiful girl</div>
+                    <div class="footer__currentsong-author"><a href="#">sourc internet</a></div>
+                </div>
+                <div class="footer__currentsong-addLibrary"><i class="far fa-heart"></i></div>
+                <div class="footer__currentsong-more"><i class="fas fa-ellipsis-h"></i></div>
+            </div>
+            <div class="footer__control">
+                <div class="footer__control-btnbox">
+                    <div class="footer__control-btn"><i class="fal fa-random"></i></div>
+                    <div class="footer__control-btn"><i class="fal fa-step-backward"></i></div>
+                    <div class="footer__control-btn footer__control-pp footer__control-btn--active"><i
+                            class="fal fa-play-circle"></i>
+                    </div>
+                    <div class="footer__control-btn footer__control-pp"><i class="fal fa-pause-circle"></i></div>
+                    <div class="footer__control-btn"><i class="fal fa-step-forward"></i></div>
+                    <div class="footer__control-btn"><i class="fal fa-sync"></i></div>
+                </div>
+                <div class="footer__control-progress">
+                    <div class="footer__control-progress-start">00:00</div>
+                    <input type="range" min="0" max="100" value="10">
+                    <div class="footer__control-progress-end">00:00</div>
+                </div>
+            </div>
+            <div class="footer__option">
+                <div class="footer__option-item footer__option-lyrics"><i class="fad fa-microphone"></i></div>
+                <div class="footer__option-item footer__option-fullWindow"><i class="fal fa-expand-arrows"></i></div>
+                <div class="footer__option-item footer__option-speaker">
+                    <i class="fal fa-volume"></i>
+                    <i class="fal fa-volume-mute" style="display: none;"></i>
+                </div>
+                <div class="footer__option-item footer__option-volume">
+                    <input type="range" type="range" min="0" max="100" value="10">
+                </div>
+                <div class="footer__option-item footer__option-musicList">
+                    <i class="fal fa-list-music"></i>
+                    <!-- <i class="far fa-album"></i> -->
+                </div>
+            </div>
         </div>
     </div>
 </body>
